@@ -1,15 +1,23 @@
+import { Nav } from 'react-bootstrap'
 
 const Navbar = () => {
 
     return (
-        <nav className='navbar'>
-            <div className='links'>
-                <a href="/">Home</a>
-                <a href="/day">Day View</a>
-                <a href="/week">Week View</a>
-                <a href="/month">Month View</a>
-            </div>
-        </nav>
+        <Nav variant='tabs' defaultActiveKey='/'>
+            <Nav.Item>
+                <Nav.Link href="/">Home</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link href="/day">Day View</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link href="/week">Week View</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link href="/month">Month View</Nav.Link>
+            </Nav.Item>
+
+        </Nav>
     );
 }
 
