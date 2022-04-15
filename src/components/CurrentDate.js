@@ -2,7 +2,11 @@
 const CurrentDate = () => {
 
     const current = new Date();
+    let currentDate;
     let day;
+    let date = current.getDate();
+    let year = current.getFullYear()
+
     switch (current.getDay()) {
         case 0: day = "Sunday";
         break;
@@ -44,11 +48,13 @@ const CurrentDate = () => {
         break;
         case 11: month = "December";
     }
-    const dateStatement = `Today is ${day} ${month} ${current.getDate()}`
+    const dateStatement = `Today is ${day} ${month} ${date}, ${year}.`
+
+    console.log(day, date, month, year);
 
     return (
         <h3>
-            {dateStatement}
+            { dateStatement }
         </h3>
     )
 }

@@ -1,0 +1,29 @@
+
+{
+    "tasks": [
+        {
+            "title": "Groceries",
+            "date": [14, 3, 2022],
+            "body": "Milk, Eggs, Bread",
+            "type": "personal",
+            "hour": 15,
+            "id": 1
+        },
+        {
+            "title": "Dentist",
+            "date": [14, 3, 2022],
+            "body": "Check up and teeth cleaning",
+            "type": "appointment",
+            "hour": 10,
+            "id": 2
+        },
+        {
+            "title": "Clean Room",
+            "date": [14, 3, 2022],
+            "body": "Put away clothes, organize mail, make bed",
+            "type": "personal",
+            "hour": 17,
+            "id": 3
+        }
+    ]
+}
